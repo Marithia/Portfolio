@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Emily Fung</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+<header>       
+<nav>
+        
+        <ul class="topnav">
+            <li id="title"><a href="index.html">EMILY FUNG</a></li>
+            <li><a href="index.html">ABOUT</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    
+</nav>
+</header>
+    
+<!--<div id="container">-->
+<!--<div id="subject32">-->
+<!--<div class="column">-->
+    
+<!--
+<div class="clearfix">
+    
+    
+<div class="mainimg"><img src="EmilyFungRender222.jpg" alt="Subject32" id="pic" onclick="changeImage()" /></div>
+-->
+<!--
+    <img class="slides" src="EmilyFungRender2.jpg" alt="Subject#32" width="25%">
+        <img class="slides" src="Pose2.jpg" alt="Subject#32" width="35%">
+        
+        <button class="button-left" onClick="plusDivs(1)">&#10094;</button>
+        <button class="button-right" onClick="plusDivs(1)">&#10095;</button>
+-->
+<!--
+<h2>Subject #32</h2>
+        <p>Subject #32 is a 3D model created with 3D-Coat and MAYA. An innocent human that was lured by demons in disguise into what seemed to be an innocent experiement. But then it took a dark turn and the true experiement was revealed. This is the results, and Subject #32 is no longer the innocent human he once was.</p>
+-->
+<!--    </div>-->
+<!--    <div class="column">-->
+<!--        <div class="clearfix">-->
+      
+<div class="container wh">
+    
+<div align="middle" class="left-div left-text">
+    <img src="EmilyFungRender222.jpg" alt="Subject32" id="pic" onclick="changeImage()" width="420" transform="translateY(-150px)" />
+</div>
+    
+<div class="right-div right-text"> 
+    <br><br>
+<h2>Subject #32</h2>
+        <p>Subject #32 is a 3D model created with 3D-Coat and MAYA. An innocent human that was lured by demons in disguise into what seemed to be an innocent experiement. But then it took a dark turn and the true experiement was revealed. This is the results, and Subject #32 is no longer the innocent human he once was.</p>
+    <br>
+</div>
+</div>
+    
+<script>    
+    var newsrc = "Pose222.jpg";
+
+function changeImage() {
+  if ( newsrc == "Pose222.jpg" ) {
+    document.images["pic"].src = "Pose222.jpg";
+    document.images["pic"].alt = "Subject32";
+    newsrc  = "EmilyFungRender222.jpg";
+  }
+  else {
+    document.images["pic"].src = "EmilyFungRender222.jpg";
+    document.images["pic"].alt = "Subject32";
+    newsrc  = "Pose222.jpg";
+  }
+}
+</script>   
+<!--        </div>-->
+    
+<!--    </div>-->
+<!--    </div>-->
+<!-- </div>   -->
+<!--
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("slides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+-->
+
+    
+<footer class="max-width">
+        <p>EMILY FUNG 2019</p>
+        <a href="https://www.instagram.com/marithiaful/" class="fa fa-instagram" ></a>
+        <a href="https://www.linkedin.com/in/emily-fung-61ab2585" class="fa fa-linkedin"></a>
+        <a href="https://emilyfungdsdn141.tumblr.com/" class="fa fa-tumblr"></a>
+</footer>
+    
+
+    
+</body>
+</html>

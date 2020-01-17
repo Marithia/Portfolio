@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Emily Fung</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+
+    
+<header>       
+<nav>
+        
+        <ul class="topnav">
+            <li id="title"><a href="index.html">EMILY FUNG</a></li>
+            <li><a href="index.html">ABOUT</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    
+</nav>
+</header>
+    
+<!--
+<section>
+    <div id="nav">
+        <ul>
+            
+            <div class="topnav" id="myTopnav">
+            
+            <li><a href="index.html">About</a></li>
+            
+            
+            
+            <div class="dropdown">
+                <button class="dropbtn">Projects
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <li><a href="pantrypal.html">Pantry Pal</a></li>
+                    <li><a href="subject32.html">Subject #32</a></li>
+                </div>
+            </div>
+            <li><a href="projects.html">Projects</a></li>
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            <li><a href="contact.html">Contact</a></li>
+                
+            </div>
+                
+        </ul>
+        
+        <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+        
+    </div>
+</section>
+-->
+    
+    
+<!--<div id="container">-->
+   
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    
+<div class="projects">
+    
+<button type="button" class="collapsible">PANTRY PAL</button>
+<div class="content">
+  <a href="https://marithia.github.io/index.html"><img src="pantrypal.PNG" alt="Pantrypal" width="500"></a>
+  <p>An ambitous webapp designed to keep track of the dates on your food. By using ocular character recognition (OCR) to scan the date on your food items and storing it into a datatbase; You can easily keep track of your pantry. <a href="https://marithia.github.io/index.html">View on Github</a></p>
+</div>
+<button type="button" class="collapsible">SUBJECT #32</button>
+<div class="content">
+  <div class="left-div left-text">
+    <img src="EmilyFungRender222.jpg" alt="Subject32" id="pic" onclick="changeImage()" width="650"/>
+  </div>
+  <p>Subject #32 is a 3D model created with 3D-Coat and MAYA. An innocent human that was lured by demons in disguise into what seemed to be an innocent experiement. But then it took a dark turn and the true experiement was revealed. This is the results, and Subject #32 is no longer the innocent human he once was.</p>
+</div>
+<button type="button" class="collapsible">VEILED JELLYFISH</button>
+<div class="content">
+  <div>
+  <img  src="Image1.jpg" alt="Veiled Jellyfish" width="500"/>
+  </div>
+  <p>Illuminated Jellyfish is a wearable technology piece that imitates the form of a jellyfish. It immerses the wearer inside the jellyfish, by making the wearer into the Jellyfish itself. This design aims to highlight the unique nature of the Jellyfish and bring out the colorful and playful nature of these creatures.</p>   
+ 
+<p>The head of the jellyfish was inspired by Comb Jellyfish with its interesting light patterns. By layering different fabrics together, it enhanced the moods of the jellyfish with the way the different modes reflected off the skin. The tentacles move freely on its own, it mimics how the Jellyfish navigates.</p> 
+ 
+<p>Inspired by the way light reflects on a jellyfish, Illuminated Jellyfish responds to different lighting through moods. If it senses it is bright then the colors of the Jellyfish will pulse softy, and if it is dark, then the colors will flash, creating the emotion of fear.
+</p>
+</div>
+<button type="button" class="collapsible">CRYSTAL LAMP</button>
+<div class="content">
+  <div>
+<!--    <img src="Photo_1.jpg" alt="Crystal_Lamp" id="pict" onclick="changeImage2()" height="400"/>-->
+      <video width="500" controls>
+      
+      <source src="CrystalLamp.mp4" type="video/mp4">
+      
+      </video>
+</div>
+  <p>Crystal Lamp is a data visualizer that tells you what time of the day. It was inspired by crystals with the purples, pinks, and blues. The elegant crystals look like a geode.</p>   
+
+  <p>The crystals are made from scented wax which when the lamp is lit up gradually leaves your room with a soft scent. How it works is that the first crystal lights up at 6am to signal the start of the of the day. At midday the next one lights up with the morning crystal still lit. When it is 5pm the last of the crystals and some of the outer crystals light up. They turn off at midnight to leave you to sleep.</p> 
+
+  <p>The design of Crystal Lamp and its form creates a warm glow that lights up your room gradually throughout the day. The wax crystals diffuse the lights making it easier for you to wind down at the end of the day. The goal of this project is to make an object that is aesthetically pleasing and functional. Let the gentle touch of the crystal lamp help you drift off to sleep, ready for fresh start to a new day.</p>
+</div>
+</div>   
+<!--
+<h2>Projects</h2>
+<p>Here you will find my work.</p>
+<a href="pantrypal.html">Pantry Pal</a>
+<a href="subject32.html">Subject #32</a>
+-->
+
+<!--</div>-->
+    <script>
+    
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+    
+    </script>
+<!--
+<script>
+      
+ var elem = document.querySelector('.collapsible.expandable');
+var instance = M.Collapsible.init(elem, {
+  accordion: false
+});   
+</script>
+-->
+
+<script>    
+    var newsrc = "Pose222.jpg";
+
+function changeImage() {
+  if ( newsrc == "Pose222.jpg" ) {
+    document.images["pic"].src = "Pose222.jpg";
+    document.images["pic"].alt = "Subject32";
+    newsrc  = "EmilyFungRender222.jpg";
+  }
+  else {
+    document.images["pic"].src = "EmilyFungRender222.jpg";
+    document.images["pic"].alt = "Subject32";
+    newsrc  = "Pose222.jpg";
+  }
+}
+</script>
+    
+
+<script>    
+    var newsrc = "photo_1.jpg";
+
+function changeImage2() {
+  if ( newsrc == "photo_1.jpg" ) {
+    document.images["pict"].src = "photo_1.jpg";
+    document.images["pict"].alt = "crystal_lamp";
+    newsrc  = "Photo_2.jpg";
+  }
+  else {
+    document.images["pict"].src = "Photo_2.jpg";
+    document.images["pict"].alt = "crystal_lamp";
+    newsrc  = "photo_1.jpg";
+  }
+
+}
+</script>
+    
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+<footer class="max-width">
+        <p>EMILY FUNG 2019</p>
+        <a href="https://www.instagram.com/marithiaful/" class="fa fa-instagram" ></a>
+        <a href="https://www.linkedin.com/in/emily-fung-61ab2585" class="fa fa-linkedin"></a>
+        <a href="https://emilyfungdsdn141.tumblr.com/" class="fa fa-tumblr"></a>
+</footer>
+    
+
+    
+</body>
+</html>
